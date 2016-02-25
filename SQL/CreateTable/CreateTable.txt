@@ -1,0 +1,16 @@
+CREATE TABLE `chara` (
+  `id` int(11) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `Vtrggerl` varchar(45) DEFAULT NULL,
+  `V_memo` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `skill_table` (
+  `name_id` int(11) NOT NULL,
+  `skill_id` int(11) NOT NULL,
+  `skill_name` varchar(45) DEFAULT NULL,
+  `command` varchar(45) DEFAULT NULL,
+  `s_memo` longtext,
+  PRIMARY KEY (`name_id`,`skill_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
