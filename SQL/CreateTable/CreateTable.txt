@@ -1,8 +1,11 @@
 CREATE TABLE `chara` (
   `id` int(11) NOT NULL,
   `name` varchar(45) DEFAULT NULL,
+  `Vskill` varchar(45) DEFAULT NULL,
+
+  `Vskill_memo` longtext,
   `Vtrggerl` varchar(45) DEFAULT NULL,
-  `V_memo` longtext,
+  `Vtrgger_memo` longtext,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
