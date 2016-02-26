@@ -17,3 +17,25 @@ CREATE TABLE `skill_table` (
   `s_memo` longtext,
   PRIMARY KEY (`name_id`,`skill_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE USER SystemUser IDENTIFIED BY PASSWORD 'System_User';
+
+
+
+GRANT DELETE ON chara TO SystemUser;
+
+GRANT INSERT ON chara TO SystemUser;
+
+GRANT SELECT ON chara TO SystemUser;
+
+GRANT UPDATE ON chara TO SystemUser;
+
+
+
+GRANT DELETE ON skill_table TO SystemUser;
+
+GRANT INSERT ON skill_table TO SystemUser;
+
+GRANT SELECT ON skill_table TO SystemUser;
+
+GRANT UPDATE ON skill_table TO SystemUser;
