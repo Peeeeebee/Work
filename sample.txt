@@ -1,1 +1,11 @@
-test
+1.Hibernateの設定開始
+2.構成ファイルを設定(DB接続先の設定と一部プロパティ変更)
+https://netbeans.org/kb/docs/web/hibernate-webapp_ja.html
+
+3.HibernateUtil.java作成
+～概要～
+Hibernateへのセッションオブジェクト。
+Hibernateを使用するには、起動を処理し、HibernateのSessionFactory(HibernateのAPI?)にアクセスして
+セッション・オブジェクトを取得するヘルパー・クラスを作成する必要があります。
+このクラスは、configure()をコールし、hibernate.cfg.xml構成ファイルをロードし、
+次にSessionFactoryをビルドしてセッション・オブジェクトを取得します。
