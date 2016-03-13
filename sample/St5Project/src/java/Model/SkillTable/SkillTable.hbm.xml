@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/02/29 8:27:59 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="test_schema" name="Model.SkillTable.SkillTable" optimistic-lock="version" table="skill_table">
+    <composite-id class="Model.SkillTable.SkillTableId" name="id">
+      <key-property name="nameId" type="int">
+        <column name="name_id"/>
+      </key-property>
+      <key-property name="skillId" type="int">
+        <column name="skill_id"/>
+      </key-property>
+    </composite-id>
+    <property name="skillName" type="string">
+      <column length="45" name="skill_name"/>
+    </property>
+    <property name="command" type="string">
+      <column length="45" name="command"/>
+    </property>
+    <property name="SMemo" type="string">
+      <column name="s_memo"/>
+    </property>
+  </class>
+</hibernate-mapping>
