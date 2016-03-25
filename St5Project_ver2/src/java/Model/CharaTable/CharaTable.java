@@ -21,8 +21,18 @@ public class CharaTable {
             Statement stm = con.createStatement();
             String sql = "select * from chara";
             rs = stm.executeQuery(sql);
+            rs.next();
+            System.out.println(rs.getString("name"));
         }catch (SQLException e) {
             System.out.println("CharaテーブルのSELECT失敗");
+        } finally {
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    System.out.println("MySQLのクローズに失敗しました。");
+                }
+            }
         }
         return rs;
     }
